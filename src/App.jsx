@@ -66,29 +66,29 @@ function App() {
   return (
     <main className="page">
       <section className="hero">
-        <div className="hero__overlay">
+        <div className="hero_overlay">
           <p className="eyebrow">Välkommen till</p>
           <h1>Hotellbokning</h1>
-          <p className="hero__text">
+          <p className="hero_text">
             Boka ditt rum enkelt och snabbt. Välj mellan Standard, Deluxe och
             Suite för din nästa vistelse.
           </p>
-          <button className="hero__button" onClick={scrollToBooking}>
+          <button className="hero_button" onClick={scrollToBooking}>
             Boka nu
           </button>
         </div>
       </section>
 
       <section id="booking" className="booking">
-        <div className="booking__container">
+        <div className="booking_container">
           <p className="section-label">Bokning</p>
           <h2>Boka ditt rum</h2>
-          <p className="booking__intro">
+          <p className="booking_intro">
             Fyll i dina uppgifter och välj rumstyp för att slutföra bokningen.
           </p>
 
           {!isBooked ? (
-            <form className="booking__form" onSubmit={handleSubmit}>
+            <form className="booking_form" onSubmit={handleSubmit}>
               <div className="form-group">
                 <label htmlFor="name">Namn</label>
                 <input
@@ -132,13 +132,13 @@ function App() {
               </button>
             </form>
           ) : (
-            <div className="booking__success">
+            <div className="booking_success">
               <h3>Bokningen är bekräftad</h3>
               <p className="success-text">
                 Tack för din bokning. Vi ser fram emot ditt besök.
               </p>
 
-              <div className="booking__summary">
+              <div className="booking_summary">
                 <p>
                   <strong>Namn:</strong> {formData.name}
                 </p>
